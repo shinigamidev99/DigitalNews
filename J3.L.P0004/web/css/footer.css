@@ -1,0 +1,14 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 14, 2020, 10:06:05 PM
+    Author     : Administrator
+*/
+.footer {
+    width: 886px;
+    height: 78px;
+    background-image: url('../image/footer.jpg');
+}
