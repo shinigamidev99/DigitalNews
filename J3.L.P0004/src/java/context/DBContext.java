@@ -23,7 +23,7 @@ public class DBContext {
         String url = "jdbc:sqlserver://" + config.getConfigValue("host") + ":" + config.getConfigValue("port")
                 + ";databaseName=" + config.getConfigValue("databaseName");
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-        Connection conn = DriverManager.getConnection(url, "sa", "1");
+        Connection conn = DriverManager.getConnection(url, config.getConfigValue("username"), config.getConfigValue("password"));
         return conn;
     }
 
